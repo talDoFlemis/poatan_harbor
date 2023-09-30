@@ -188,7 +188,7 @@ CREATE TABLE IF NOT EXISTS move_history_portuary_resources (
 
 CREATE TABLE IF NOT EXISTS move_history_human_resources (
     move_history_id integer NOT NULL REFERENCES move_history (id),
-    crew_id integer NOT NULL REFERENCES crews (id),
+    emp_id integer NOT NULL REFERENCES employees (id),
     moved_at timestamp with time zone NOT NULL DEFAULT now(),
-    PRIMARY KEY (move_history_id, crew_id)
+    PRIMARY KEY (move_history_id, emp_id)
 );
