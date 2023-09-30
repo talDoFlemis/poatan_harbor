@@ -1,0 +1,16 @@
+{
+  "name": "seed",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/pg": "^8.10.3",
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^8.1.0",
+    "pg": "^8.11.3"
+  }
+}
