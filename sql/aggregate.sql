@@ -74,6 +74,7 @@ CREATE TABLE IF NOT EXISTS crews (
 CREATE TABLE IF NOT EXISTS commanders (
     crew_id integer NOT NULL REFERENCES crews (id),
     ship_id integer NOT NULL REFERENCES ships (id),
+    UNIQUE (ship_id),
     PRIMARY KEY (crew_id, ship_id)
 );
 
