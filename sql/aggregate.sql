@@ -124,7 +124,8 @@ CREATE TABLE IF NOT EXISTS employees (
     dbo date NOT NULL,
     gender char(1) NOT NULL,
     cpf char(11) NOT NULL,
-    kind employee_kind NOT NULL
+    kind employee_kind NOT NULL,
+    PRIMARY KEY(id)
 );
 
 CREATE TYPE resource_kind AS ENUM (
