@@ -2,6 +2,9 @@
   "name": "seed",
   "module": "index.ts",
   "type": "module",
+  "scripts": {
+    "seed": "ts-node index.ts"
+  },
   "devDependencies": {
     "@types/pg": "^8.10.3",
     "bun-types": "latest"
@@ -11,6 +14,7 @@
   },
   "dependencies": {
     "@faker-js/faker": "^8.1.0",
-    "pg": "^8.11.3"
+    "pg": "^8.11.3",
+    "ts-node": "^10.9.1"
   }
 }
